@@ -1,9 +1,10 @@
-package com.example.calculatorapp
+package com.example.calculatorapp.ui
 
 import android.icu.text.DecimalFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
+import com.example.calculatorapp.R
 import com.example.calculatorapp.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception

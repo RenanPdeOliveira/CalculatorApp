@@ -14,37 +14,34 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="normalButton" parent="Widget.MaterialComponents.FloatingActionButton">
+    <style name="normalButton" parent="Widget.Material3.Button">
 
-        <item name="android:layout_width">78dp</item>
-        <item name="android:layout_height">86dp</item>
+        <item name="android:layout_width">84dp</item>
+        <item name="android:layout_height">84dp</item>
         <item name="backgroundTint">@color/btn_background</item>
-        <item name="android:layout_marginHorizontal">12dp</item>
-        <item name="android:textSize">32sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textSize">26sp</item>
 
     </style>
 
-    <style name="zeroButton" parent="Widget.MaterialComponents.FloatingActionButton">
+    <style name="zeroButton" parent="Widget.Material3.Button">
 
         <item name="android:layout_width">180dp</item>
-        <item name="android:layout_height">86dp</item>
+        <item name="android:layout_height">84dp</item>
         <item name="backgroundTint">@color/btn_background</item>
-        <item name="android:layout_marginHorizontal">12dp</item>
-        <item name="android:textSize">32sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textSize">26sp</item>
         <item name="android:textAlignment">textStart</item>
 
     </style>
 
-    <style name="countButton" parent="Widget.MaterialComponents.FloatingActionButton">
+    <style name="countButton" parent="Widget.Material3.Button">
 
-        <item name="android:layout_width">78dp</item>
-        <item name="android:layout_height">86dp</item>
+        <item name="android:layout_width">84dp</item>
+        <item name="android:layout_height">84dp</item>
         <item name="backgroundTint">@color/btn_background2</item>
-        <item name="android:layout_marginHorizontal">12dp</item>
-        <item name="android:textSize">32sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textSize">26sp</item>
 
     </style>
 

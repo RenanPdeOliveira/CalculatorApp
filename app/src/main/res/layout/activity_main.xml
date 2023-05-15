@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#171717"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/textViewCount"
@@ -28,45 +28,49 @@
         android:textAlignment="textEnd"
         android:textColor="@color/white"
         android:textSize="65dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCalculator"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutCalculator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="0" />
 
-    <LinearLayout
-        android:id="@+id/linearLayoutCalculator"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutCalculator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/acButton"
                 style="@style/normalButton"
                 android:text="AC" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/backButton"
                 style="@style/normalButton"
                 app:icon="@drawable/back_button"
                 app:iconGravity="textStart"
                 app:iconSize="35dp" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/percentageButton"
                 style="@style/countButton"
                 android:text="%" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/divisionButton"
                 style="@style/countButton"
                 android:text="/" />
@@ -74,27 +78,32 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/sevenButton"
                 style="@style/normalButton"
                 android:text="7" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/eightButton"
                 style="@style/normalButton"
                 android:text="8" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/nineButton"
                 style="@style/normalButton"
                 android:text="9" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/multiplyButton"
                 style="@style/countButton"
                 android:text="x" />
@@ -102,27 +111,32 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/fourButton"
                 style="@style/normalButton"
                 android:text="4" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/fiveButton"
                 style="@style/normalButton"
                 android:text="5" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/sixButton"
                 style="@style/normalButton"
                 android:text="6" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/minusButton"
                 style="@style/countButton"
                 android:text="-" />
@@ -130,27 +144,32 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/oneButton"
                 style="@style/normalButton"
                 android:text="1" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/twoButton"
                 style="@style/normalButton"
                 android:text="2" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/threeButton"
                 style="@style/normalButton"
                 android:text="3" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/additionButton"
                 style="@style/countButton"
                 android:text="+" />
@@ -158,28 +177,33 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/zeroButton"
                 style="@style/zeroButton"
                 android:text="0" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/dotButton"
                 style="@style/normalButton"
                 android:text="." />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/equalButton"
                 style="@style/countButton"
                 android:text="=" />
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
