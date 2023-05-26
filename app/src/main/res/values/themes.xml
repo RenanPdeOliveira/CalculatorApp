@@ -14,35 +14,56 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Portrait Layout -->
     <style name="normalButton" parent="Widget.Material3.Button">
-
         <item name="android:layout_width">84dp</item>
         <item name="android:layout_height">84dp</item>
         <item name="backgroundTint">@color/btn_background</item>
         <item name="android:layout_marginHorizontal">8dp</item>
         <item name="android:textSize">26sp</item>
-
     </style>
 
     <style name="zeroButton" parent="Widget.Material3.Button">
-
         <item name="android:layout_width">180dp</item>
         <item name="android:layout_height">84dp</item>
         <item name="backgroundTint">@color/btn_background</item>
         <item name="android:layout_marginHorizontal">8dp</item>
         <item name="android:textSize">26sp</item>
         <item name="android:textAlignment">textStart</item>
-
     </style>
 
     <style name="countButton" parent="Widget.Material3.Button">
-
         <item name="android:layout_width">84dp</item>
         <item name="android:layout_height">84dp</item>
         <item name="backgroundTint">@color/btn_background2</item>
         <item name="android:layout_marginHorizontal">8dp</item>
         <item name="android:textSize">26sp</item>
+    </style>
 
+    <!-- Landscape Layout -->
+    <style name="normalButtonLandscape" parent="Widget.Material3.Button">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">74dp</item>
+        <item name="backgroundTint">@color/btn_background</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="zeroButtonLandscape" parent="Widget.Material3.Button">
+        <item name="android:layout_width">164dp</item>
+        <item name="android:layout_height">74dp</item>
+        <item name="backgroundTint">@color/btn_background</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="countButtonLandscape" parent="Widget.Material3.Button">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">74dp</item>
+        <item name="backgroundTint">@color/btn_background2</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
 </resources>
